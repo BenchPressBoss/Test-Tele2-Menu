@@ -1,8 +1,8 @@
+import Layout from '@layout/Layout'
+import { routeConfig } from '@routes/PageRoutesConfig.tsx'
+import Home from '@screens/home/Home.tsx'
+import NotFound from '@screens/not-found/NotFound.tsx'
 import { Route, Routes } from 'react-router-dom'
-import Layout from './components/layout/Layout'
-import Home from './components/screens/home/Home.tsx'
-import NotFound from './components/screens/not-found/NotFound.tsx'
-import { routeConfig } from './routes/PageRoutesConfig.tsx'
 
 function App() {
 	return (

@@ -1,9 +1,9 @@
-import Advantages from '../components/screens/advantages/Advantages'
-import ESimTechnology from '../components/screens/esim-technology/ESimTechnology'
-import NewSubscriber from '../components/screens/new-subscriber/NewSubscriber'
-import Plans from '../components/screens/plans/Plans'
-import PromoPlan from '../components/screens/promo-plan/PromoPlan'
-import SpecialOffers from '../components/screens/special-offers/SpecialOffers'
+import Advantages from '@screens/advantages/Advantages'
+import ESimTechnology from '@screens/esim-technology/ESimTechnology'
+import NewSubscriber from '@screens/new-subscriber/NewSubscriber'
+import Plans from '@screens/plans/Plans'
+import PromoPlan from '@screens/promo-plan/PromoPlan'
+import SpecialOffers from '@screens/special-offers/SpecialOffers'
 
 interface RouteLink {
 	label: string
@@ -11,14 +11,16 @@ interface RouteLink {
 	element: JSX.Element
 }
 
+const BASE_PATH = '/Test-Tele2-menu'
+
 export class PageRoutesConfig {
-	readonly home: string = '/'
-	readonly advantages: string = '/advantages'
-	readonly plans: string = '/plans'
-	readonly specialOffers: string = '/special-offers'
-	readonly promoPlan: string = '/promo-plan'
-	readonly eSimTechnology: string = '/esim-technology'
-	readonly newSubscriber: string = '/new-subscriber'
+	readonly home = `${BASE_PATH}`
+	readonly advantages = `${BASE_PATH}/advantages`
+	readonly plans = `${BASE_PATH}/plans`
+	readonly specialOffers = `${BASE_PATH}/special-offers`
+	readonly promoPlan = `${BASE_PATH}/promo-plan`
+	readonly eSimTechnology = `${BASE_PATH}/esim-technology`
+	readonly newSubscriber = `${BASE_PATH}/new-subscriber`
 
 	getLinks(): RouteLink[] {
 		return [

@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: '/',
+	base: '/Test-Tele2-menu',
 	build: {
 		outDir: 'docs',
 	},
@@ -14,6 +14,7 @@ export default defineConfig({
 			'@': path.resolve(__dirname, './src'),
 			'@icons': path.resolve(__dirname, 'public/icons'),
 			'@components': path.resolve(__dirname, './src/components'),
+			'@screens': path.resolve(__dirname, './src/components/screens'),
 			'@styles': path.resolve(__dirname, './src/assets/styles'),
 			'@layout': path.resolve(__dirname, './src/components/layout'),
 			'@ui': path.resolve(__dirname, './src/components/ui'),

@@ -1,0 +1,24 @@
+.link {
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin-bottom: 10px;
+
+	p {
+		color: rgb(131, 131, 131);
+		transition: color 0.5s ease;
+	}
+}
+.link:hover {
+	p {
+		color: rgb(59, 59, 59);
+	}
+}
+
+.active {
+	border-bottom: 1px rgb(59, 59, 59) solid;
+	p {
+		color: rgb(59, 59, 59);
+	}
+}

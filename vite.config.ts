@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: '/Test-Tele2-menu',
+	base: 'https://benchpressboss.github.io/Test-Tele2-Menu/',
 	build: {
 		outDir: 'docs',
 	},
